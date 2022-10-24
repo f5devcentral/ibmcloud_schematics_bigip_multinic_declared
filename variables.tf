@@ -20,7 +20,7 @@ variable "region" {
 ##################################################################################
 variable "resource_group" {
   type        = string
-  default     = "default"
+  default     = "Default"
   description = "The IBM Cloud resource group to create the F5 BIG-IP instance"
 }
 
@@ -65,7 +65,7 @@ variable "tmos_custom_image" {
 ##################################################################################
 variable "tmos_image_name" {
   type        = string
-  default     = "bigip-15-1-3-0-0-11"
+  default     = "bigip-17"
   description = "The longest match image name to use from the F5 public VE image catalog"
 }
 
