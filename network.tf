@@ -8,7 +8,6 @@ data "ibm_is_subnet" "f5_external_subnet" {
 
 locals {
   secondary_subnets    = compact(tolist([var.cluster_subnet_id, var.internal_subnet_id, data.ibm_is_subnet.f5_external_subnet.id]))
-  secondary_ipv4_addresses    = compact(tolist([var.cluster_ipv4_address, var.internal_ipv4_address, var.external_ipv4_address]))
   external_floating_ip = var.external_subnet_id == "" ? false : var.bigip_external_floating_ip
 }
 
