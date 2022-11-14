@@ -65,7 +65,7 @@ variable "tmos_custom_image" {
 ##################################################################################
 variable "tmos_image_name" {
   type        = string
-  default     = "bigip-15-1-3-0-0-11"
+  default     = "bigip-16-1"
   description = "The longest match image name to use from the F5 public VE image catalog"
 }
 
@@ -87,7 +87,7 @@ variable "tmos_type" {
 ##################################################################################
 variable "instance_profile" {
   type        = string
-  default     = "cx2-2x4"
+  default     = "cx2-4x8"
   description = "The resource profile to be used when provisioning the F5 BIG-IP instance"
 }
 
