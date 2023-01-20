@@ -20,7 +20,7 @@ variable "region" {
 ##################################################################################
 variable "resource_group" {
   type        = string
-  default     = "default"
+  default     = "Default"
   description = "The IBM Cloud resource group to create the F5 BIG-IP instance"
 }
 
