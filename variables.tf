@@ -106,7 +106,7 @@ variable "ssh_key_name" {
 variable "tmos_admin_password" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "admin account password for the F5 BIG-IP instance"
 }
 
@@ -186,25 +186,25 @@ variable "license_type" {
 variable "byol_license_basekey" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "Bring your own license registration key for the F5 BIG-IP instance"
 }
 variable "license_host" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "BIGIQ IP or hostname to use for pool based licensing of the F5 BIG-IP instance"
 }
 variable "license_username" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "BIGIQ username to use for the pool based licensing of the F5 BIG-IP instance"
 }
 variable "license_password" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "BIGIQ password to use for the pool based licensing of the F5 BIG-IP instance"
 }
 variable "license_pool" {
@@ -301,6 +301,6 @@ variable "tgrefresh_url" {
 variable "encryption_key_crn" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "The crn of the encryption key"
 } 
