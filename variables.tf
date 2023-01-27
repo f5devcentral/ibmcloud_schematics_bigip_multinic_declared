@@ -106,7 +106,7 @@ variable "ssh_key_name" {
 variable "tmos_admin_password" {
   type        = string
   default     = ""
-  sensitive   = true
+#  sensitive   = true
   description = "admin account password for the F5 BIG-IP instance"
 }
 
