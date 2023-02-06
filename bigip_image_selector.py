@@ -8,7 +8,7 @@ import difflib
 ALLOWED_TMOS_TYPES = ['all', 'ltm']
 PUBLIC_REGIONS = [
     'us-south', 'us-east', 'eu-gb', 'eu-de', 'jp-tok', 'jp-osa', 'au-syd',
-    'ca-tor', 'br-sao'
+    'ca-tor', 'br-sao', 'eu-fr2'
 ]
 
 
