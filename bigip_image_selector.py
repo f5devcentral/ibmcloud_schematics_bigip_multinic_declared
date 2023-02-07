@@ -39,7 +39,10 @@ def longest_substr(type, catalog_image_name, version_prefix):
 
 
 def get_image(region, type, version):
-    image_catalog = get_public_images(region)
+    if region == "eu-fr2":
+        image_catalog = get_public_images("")
+    else:
+        image_catalog = get_public_images(region)
     max_match = 0
     image_url = None
     image_name = None
