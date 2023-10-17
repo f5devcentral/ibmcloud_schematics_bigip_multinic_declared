@@ -37,6 +37,7 @@ They are supported in the following regions:
 - us-east
 - eu-de
 - eu-gb
+- eu-es
 - jp-tok
 - jp-osa
 - au-syd
