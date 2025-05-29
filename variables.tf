@@ -174,6 +174,14 @@ variable "default_route_interface" {
   description = "The F5 BIG-IP interface name for the default route. Leave blank to auto assign."
 }
 
+##################################################################################
+# visibility - endpoint visibility
+##################################################################################
+variable "visibility" {
+  type        = string
+  default     = "public"
+  description = "Provides the ability to choose public or private endpoints of VPC services."
+}
 
 ##################################################################################
 # A&O Declaration Sources

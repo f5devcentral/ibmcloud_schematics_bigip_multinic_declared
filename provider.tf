@@ -3,6 +3,7 @@ terraform {
     ibm = {
       source  = "IBM-Cloud/ibm"
       version = "1.30.2"
+      visibility = var.visibility
     }
   }
 }
