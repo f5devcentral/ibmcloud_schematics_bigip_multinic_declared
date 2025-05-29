@@ -3,7 +3,6 @@ terraform {
     ibm = {
       source  = "IBM-Cloud/ibm"
       version = "1.30.2"
-      visibility = var.visibility
     }
   }
 }
@@ -11,6 +10,7 @@ terraform {
 # Configure the IBM Provider
 provider "ibm" {
   region = var.region
+  visibility = var.visibility
 }
 
 data "ibm_resource_group" "group" {
