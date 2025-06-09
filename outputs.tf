@@ -27,15 +27,15 @@ output "f5_management_ip" {
 }
 
 output "f5_cluster_ip" {
-  value = var.cluster_subnet_id == "" ? "" : ibm_is_instance.f5_ve_instance.network_interfaces.0.primary_ipv4_address
+  value = var.cluster_subnet_id == "" ? "" : ibm_is_instance.f5_ve_instance.network_interfaces.0.primary_ip.0.address
 }
 
 output "f5_internal_ip" {
-  value = var.internal_subnet_id == "" ? "" : element(ibm_is_instance.f5_ve_instance.network_interfaces, local.snat_interface_index).primary_ipv4_address
+  value = var.internal_subnet_id == "" ? "" : element(ibm_is_instance.f5_ve_instance.network_interfaces, local.snat_interface_index).primary_ip.0.address
 }
 
 output "f5_external_ip" {
-  value = var.external_subnet_id == "" ? "" : element(ibm_is_instance.f5_ve_instance.network_interfaces, local.vs_interface_index).primary_ipv4_address
+  value = var.external_subnet_id == "" ? "" : element(ibm_is_instance.f5_ve_instance.network_interfaces, local.vs_interface_index).primary_ip.0.address
 }
 
 output "default_gateway" {
