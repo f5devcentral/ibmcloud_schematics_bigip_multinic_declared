@@ -23,7 +23,7 @@ output "profile_id" {
 }
 
 output "f5_management_ip" {
-  value = ibm_is_instance.f5_ve_instance.primary_network_interface.0.primary_ipv4_address
+  value = ibm_is_instance.f5_ve_instance.primary_network_interface.0.primary_ip.0.address
 }
 
 output "f5_cluster_ip" {
