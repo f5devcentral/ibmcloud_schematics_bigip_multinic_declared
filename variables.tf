@@ -65,7 +65,7 @@ variable "tmos_custom_image" {
 ##################################################################################
 variable "tmos_image_name" {
   type        = string
-  default     = "bigip-16-1"
+  default     = "bigip-17-1"
   description = "The longest match image name to use from the F5 public VE image catalog"
 }
 
