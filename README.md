@@ -148,6 +148,7 @@ Before you can apply the template in IBM Cloud, complete the following steps.
     - VPC
     - SSH Key
     - VPC with multiple subnets
+    - IP Spoofing Operator
 
 ## Configuring your deployment values
 
